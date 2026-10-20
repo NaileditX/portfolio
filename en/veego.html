@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="VEEGO: Mohamed Nail Hefied’s doctoral research on the automatic evaluation of dental surgery gestures in a virtual environment."><meta name="theme-color" content="#123e43"><title>VEEGO — Mohamed Nail Hefied</title><link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css"><script src="../site.js" defer></script><link rel="stylesheet" href="../navigation.css"><link rel="stylesheet" href="../theme.css"><link rel="stylesheet" href="../experience-details.css"><script src="../experience-details.js" defer></script><link rel="stylesheet" href="../language.css"><link rel="alternate" hreflang="fr" href="../veego.html"><link rel="alternate" hreflang="en" href="veego.html"></head>
+<body id="haut">
+  <a class="skip" href="#contenu">Skip to content</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="index.html#profil" aria-label="Mohamed Nail Hefied — Introduction">MNH</a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu +</button><nav class="nav" id="navigation" aria-label="Main navigation"><a href="index.html#expertises">Expertise</a><a href="index.html#experiences" aria-current="page">Experience</a><a href="index.html#formation">Education</a><a href="index.html#publications">Publications</a><a class="nav-contact" href="cv/index.html">CV ↗</a></nav><div class="language-switch" role="group" aria-label="Language"><a href="../veego.html" hreflang="fr" lang="fr" data-language-link>FR</a><span aria-hidden="true">|</span><a href="veego.html" hreflang="en" lang="en" aria-current="true" data-language-link>EN</a></div></div></header>
+  <main class="wrap" id="contenu">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="index.html#experiences">Experience</a><span aria-hidden="true">/</span><span aria-current="page">EVAGO / VEEGO</span></nav>
+    <div class="detail-hero"><div class="experience-banner"><img class="experience-cover" src="../assets/images/veego-retour-visuel.jpeg" alt="Visual feedback from VEEGO during a dental training session" width="4000" height="3000" fetchpriority="high"><div class="experience-banner-content"><h1>Doctoral research <span>EVAGO Project</span></h1><div class="research-keywords"><p>Keywords</p><ul class="tag-list" aria-label="Research keywords"><li>Automatic motion-based analysis</li><li>Virtual training environment</li><li>Dental surgery</li><li>Artificial intelligence</li><li>Motion capture</li></ul></div></div></div></div>
+    <div class="detail-meta"><div><span>Period</span>October 2022 – August 2026</div><div><span>Laboratory</span>LIUM · Le Mans Université</div><div><span>Application</span>Preclinical dental training</div><div><span>Thesis supervisors</span>Dr Ludovic Hamon <a class="researcher-link" href="https://dblp.org/pid/95/6458.html" title="Ludovic Hamon’s DBLP publications" aria-label="Ludovic Hamon’s DBLP publications">↗</a> · <a class="researcher-link" href="https://scholar.google.com/citations?user=QYQKcOoAAAAJ&amp;hl=fr" title="Sébastien George’s Google Scholar profile">Prof. Sébastien George ↗</a></div></div>
+    <div class="detail-layout">
+      <nav class="detail-toc" aria-label="Project contents"><p>On this page</p><a href="#contexte">01 · Context</a><a href="#approche">02 · Contribution</a><a href="#projet">03 · EVAGO Project</a><a href="#manifestations">04 · Scientific events</a><a href="#diffusion">05 · Publications</a></nav>
+      <div>
+        <section class="detail-section" id="contexte" aria-labelledby="contexte-title"><div class="institution-heading"><h2 id="contexte-title">Context</h2><img src="../assets/logos/lium.png" alt="LIUM — Computer Science Laboratory of Le Mans Université" loading="lazy"></div><p>My research focuses on designing and implementing models and tools for the automatic analysis and evaluation of technical gestures, addressing experts’ observation needs in the context of preclinical dental surgery training.</p><p id="questions">My research questions concern the adaptability of the automatic evaluation engine to experts’ evolving observation needs, as well as the open integration of multiple forms of motor expertise, with each teacher consulted individually and free to propose their own observation needs.</p></section>
+        <section class="detail-section" id="approche" aria-labelledby="contributions-title"><h2 id="contributions-title">Contribution</h2><p>Among my contributions, I developed VEEGO (<em>Virtual Environment for the Evaluation of Gestures in Odontology</em>), a virtual environment dedicated to the automatic evaluation of dental gestures. VEEGO captures motion, replays it through 3D avatars, and automatically identifies gesture and posture errors using machine learning models trained through its interface on expert demonstrations. It then provides learners with real-time visual and textual feedback on what to correct.</p><ol class="process-list feature-videos" id="videos">
+          <li><div class="feature-video-row"><div><h3 id="stream-title">Capture and replay motion</h3><ul class="feature-points"><li>Streaming motion data.</li><li>Recording and replaying motion through 3D avatars.</li><li>Multiple capture systems: Qualisys, Perception Neuron and Azure Kinect.</li></ul></div><video controls playsinline preload="metadata" aria-labelledby="stream-title"><source src="../assets/videos/veego-capture-enregistrement-relecture.mp4" type="video/mp4">Your browser does not support video playback. <a href="../assets/videos/veego-capture-enregistrement-relecture.mp4">Open the capture and replay demonstration</a>.</video></div></li>
+          <li><div class="feature-video-row"><div><h3 id="training-title">Train models through VEEGO</h3><ul class="feature-points"><li>Segmenting and labelling expert demonstrations.</li><li>Computing motion descriptors.</li><li>Training a machine learning model for each observation need.</li></ul></div><video controls playsinline preload="metadata" aria-labelledby="training-title"><source src="../assets/videos/veego-entrainement.mp4" type="video/mp4">Your browser does not support video playback. <a href="../assets/videos/veego-entrainement.mp4">Open the training demonstration</a>.</video></div></li>
+          <li><div class="feature-video-row"><div><h3 id="detection-title">Identify gesture and posture errors</h3><ul class="feature-points"><li>Automatic real-time error detection.</li><li>Visual feedback through colour coding on a 3D avatar, alongside textual guidance.</li><li>A final summary of error occurrence frequencies over the recording.</li><li>Comparison of the learner’s gestures with a teacher’s demonstration.</li></ul></div><video controls playsinline preload="metadata" aria-labelledby="detection-title"><source src="../assets/videos/veego-evaluation.mp4" type="video/mp4">Your browser does not support video playback. <a href="../assets/videos/veego-evaluation.mp4">Open the evaluation demonstration</a>.</video></div></li>
+        </ol><div class="highlight evaluation-highlight" id="evaluation">
+          <div class="evaluation-heading"><strong>Evaluated with more than 60 students</strong><img src="../assets/logos/nantes-universite.png" alt="Nantes Université" loading="lazy"></div>
+          <p>VEEGO was validated with experts and evaluated with more than 60 students at the Faculty of Dentistry in Nantes, France.</p>
+          <p>Students found VEEGO’s feedback useful for learning gestures and postures:</p>
+          <dl class="validation-results" aria-label="Perceived usefulness of feedback for learning gestures and postures">
+            <div><dt>Strongly agree</dt><dd>74.2%</dd></div>
+            <div><dt>Agree</dt><dd>24.2%</dd></div>
+            <div><dt>Disagree</dt><dd>1.5%</dd></div>
+          </dl>
+          <h3>Student feedback (translated from French)</h3>
+          <div class="student-feedback">
+            <blockquote lang="en"><p>“I really enjoyed the experience and will take the feedback into account in future practical sessions. Thank you!”</p></blockquote>
+            <blockquote lang="en"><p>“I found that the software helped me correct many ergonomic errors, particularly my position around the phantom and staying in the right quadrant so as not to get in my assistant’s way. Highlighting errors allows me to correct them immediately and avoid repeating them.”</p></blockquote>
+            <blockquote lang="en"><p>“It should be available to all students: very educational and instructive.”</p></blockquote>
+          </div>
+        </div></section>
+        
+        <section class="detail-section" id="projet" aria-labelledby="projet-title">
+          <div class="evago-heading"><h2 id="projet-title">EVAGO Project</h2><img src="../assets/logos/evago.png" alt="EVAGO project logo" loading="lazy"></div>
+          <p>This work is part of the <a class="text-link" href="https://evago-lium.univ-lemans.fr/">EVAGO project ↗</a>, in which I worked with dental experts from RMeS, education researchers from CREN and industrial partner HRV. The project is funded by the French National Research Agency (ANR) under its PRCE programme (<a class="text-link" href="https://anr.fr/Projet-ANR-21-CE38-0010">ANR-21-CE38-0010 ↗</a>).</p>
+          <p>I mainly contributed to WP3, led by LIUM, which aimed to propose models and prototypes to represent and evaluate activity according to experts’ needs. I also participated in other work packages.</p>
+          <div class="evago-overview">
+            <div class="evago-frame"><iframe src="https://www.youtube-nocookie.com/embed/P-7JndlFx4M" title="EVAGO project presentation (in French)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="evago-video-fallback"><a class="text-link" href="https://www.youtube.com/watch?v=P-7JndlFx4M">Watch the video on YouTube ↗</a></p>
+          </div>
+          <div class="project-partners"><h3>Partners</h3><p class="partner-source"><a href="https://evago-lium.univ-lemans.fr/php/partenaires.php">Discover the partners and their roles ↗</a></p>
+            <ul class="partner-logos" aria-label="EVAGO project partners">
+              <li><img src="../assets/logos/lium.png" alt="LIUM — Computer Science Laboratory of Le Mans Université" loading="lazy"></li>
+              <li><img src="../assets/logos/cren.png" alt="CREN — Nantes Education Research Centre" loading="lazy"></li>
+              <li><img src="../assets/logos/rmes.png" alt="RMeS — Regenerative Medicine and Skeleton" loading="lazy"></li>
+              <li><img class="partner-hrv" src="../assets/logos/hrv.jpg" alt="HRV Simulation — industrial partner" loading="lazy"></li>
+            </ul>
+          </div>
+        </section>
+        <section class="detail-section" id="manifestations" aria-labelledby="manifestations-title">
+      <h2 id="manifestations-title">Recent scientific events</h2>
+      <ol class="scientific-events">
+        <li><span class="event-year">2026</span><div><h3>CSEDU26</h3><p>Oral presentation · 18–20 May 2026 · Benidorm, Spain.</p></div></li>
+        <li><span class="event-year">2026</span><div><h3><a href="https://jgt.sciencesconf.org/">Technical Gesture Days (JGT) ↗</a></h3><p>Poster and video presentation · 5–6 February 2026 · Laval, France.</p></div></li>
+        <li><span class="event-year">2025</span><div><h3>GTRV Workshop</h3><p>Oral presentation · 4 July 2025 · Lyon, France.</p></div></li>
+        <li><span class="event-year">2024</span><div><h3>IHM–IG–RV Workshop</h3><p>Oral presentation · 30–31 May 2024 · Lille, France.</p></div></li>
+        <li><span class="event-year">2024</span><div><h3>CSEDU24</h3><p>Oral presentation · 2–4 May 2024 · Angers, France.</p></div></li>
+        <li><span class="event-year">2024</span><div><h3>10<sup>th</sup> EIAH Young Researchers’ Meeting</h3><p>Poster presentation and organising committee member · Laval, France.</p></div></li>
+        <li><span class="event-year">2024</span><div><h3>JDOC2024 · MASTIC Doctoral School</h3><p>Poster presentation at the Doctoral Students’ Day · Nantes, France.</p></div></li>
+        <li><span class="event-year">2024</span><div><h3>Doctoriales Laval Virtual</h3><p>Poster presentation · Laval, France.</p></div></li>
+        <li><span class="event-year">2023</span><div><h3>AUPTIC éducation · 7<sup>th</sup> international conference</h3><p>Contribution to a presentation of the multidisciplinary EVAGO project · November 2023 · Caen, France.</p></div></li>
+      </ol>
+    </section>
+        <section class="detail-section" id="diffusion" aria-labelledby="publication-title"><h2 id="publication-title">Publications</h2><ol class="publication-list">
+        <li class="publication" data-year="2026"><span class="publication-year">2026</span><div><h3><a href="https://hal.science/hal-05631504">Virtual Environment for the Evaluation of Gestures in Odontology</a></h3><p>M. N. Hefied, L. Hamon, S. George · CSEDU, 18th edition, vol. 2, pp. 1388–1400.</p><div class="publication-links"><a href="https://hal.science/hal-05631504">HAL ↗</a><a href="https://doi.org/10.5220/0014665700004021">DOI ↗</a><a href="../assets/documents/hefied-veego-csedu-2026.pdf">PDF ↗</a></div></div><span class="publication-mark" aria-hidden="true">↗</span></li>
+        <li class="publication" data-year="2024"><span class="publication-year">2024</span><div><h3><a href="https://hal.science/hal-04716141">A Pipeline for the Automatic Evaluation of Dental Surgery Gestures in Preclinical Training from Captured Motions</a></h3><p>M. N. Hefied, L. Hamon, S. George, V. Loison, F. Pirolli, S. Lopez, R. Crétin-Pirolli · CSEDU, p. 420–427.</p><div class="publication-links"><a href="https://hal.science/hal-04716141">HAL ↗</a><a href="https://doi.org/10.5220/0012685000003693">DOI ↗</a></div></div><span class="publication-mark" aria-hidden="true">↗</span></li>
+        <li class="publication" data-year="2024"><span class="publication-year">2024</span><div><h3><a href="https://hal.science/hal-04682602" lang="fr">Pipeline initial pour l’évaluation automatique du geste en odontologie</a></h3><p>M. N. Hefied · Rencontres jeunes chercheuses et chercheurs en EIAH, p. 218–222.</p><div class="publication-links"><a href="https://hal.science/hal-04682602">HAL ↗</a></div></div><span class="publication-mark" aria-hidden="true">↗</span></li>
+        
+        <li class="publication" data-year="2023"><span class="publication-year">2023</span><div><h3><a href="https://hal.science/hal-04323836" lang="fr">Projet de recherche EVAGO — Un travail pluri et transdisciplinaire présenté par ses doctorants</a></h3><p>V. Loison, O. N. Bandiaky, V. Agueda, M. N. Hefied · AUPTIC éducation, 7th international conference.</p><div class="publication-links"><a href="https://hal.science/hal-04323836">HAL ↗</a></div></div><span class="publication-mark" aria-hidden="true">↗</span></li>
+        
+      </ol></section>
+        <a class="next-project" href="experiences.html"><div><small>Continue exploring</small><strong>Teaching computer science.</strong></div><span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </main>
+  <footer class="wrap site-footer simple-footer"><span>© 2026 Mohamed Nail Hefied</span><div class="footer-links"><a class="button small" href="mailto:nail.hefied@gmail.com">Contact</a><a class="button small" href="https://www.linkedin.com/in/nailhefied" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="button small" href="#haut">Back to top ↑</a></div></footer>
+<script src="../language.js" defer></script></body>
+</html>

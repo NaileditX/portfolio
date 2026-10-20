@@ -1,0 +1,43 @@
+﻿/* Intro d’accueil et composition photographique. */
+[hidden]{display:none!important}
+.site-intro{position:fixed;inset:0;z-index:1000;background:#fcfcfa;display:grid;place-items:center;transition:opacity .35s ease,visibility .35s;pointer-events:all}
+body.intro-active{overflow:hidden}
+.site-intro.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+.intro-loading{display:flex;flex-direction:column;align-items:center;gap:20px;color:#7a897e;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.intro-spinner{width:32px;height:32px;border:1px solid #dee8dd;border-top:2px solid #386b54;border-radius:50%;animation:intro-spin .85s linear infinite}
+.intro-welcome{font-size:clamp(50px,9vw,100px);font-weight:500;letter-spacing:-.065em;line-height:1.2;color:#172f2d;animation:welcome-in .4s ease both}
+.intro-welcome span{color:#73a781}
+@keyframes intro-spin{to{transform:rotate(360deg)}}
+@keyframes welcome-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.photo-hero{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.photo-introduction{padding-bottom:20px;min-width:0}
+.photo-introduction h1{font-size:clamp(36px,3.6vw,50px);line-height:1.12;letter-spacing:-.045em;font-weight:700;margin:0 0 15px;max-width:520px}
+.photo-role{font-size:22px;font-weight:500;line-height:1.4;letter-spacing:-.025em;color:#344a40;margin:0 0 24px}
+.photo-description{font-size:17px;line-height:1.8;color:#718075;max-width:415px;margin:0}
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-linkedin{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;flex-shrink:0;border:1px solid var(--accent-border);border-radius:50%;background:var(--white);color:var(--teal);transition:background .2s,transform .2s}
+.hero-linkedin svg{width:22px;height:22px;fill:currentColor}
+.hero-linkedin:hover:not(:disabled){background:var(--accent-soft);transform:translateY(-2px)}
+.hero-linkedin:disabled{opacity:.55;cursor:default}
+.hero-actions .button{min-height:48px;padding:11px 21px;gap:15px}
+.photo-collage{position:relative;width:100%;aspect-ratio:.96;isolation:isolate}
+.collage-photo{--photo-angle:0deg;position:absolute;margin:0;transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.collage-photo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:12px;box-shadow:0 10px 25px #172f2d0c;transition:box-shadow .35s ease}
+.collage-photo figcaption{position:absolute;color:#758066;font-family:Georgia,"Times New Roman",serif;font-size:12px;font-style:italic;line-height:1.2;white-space:nowrap}
+.photo-dental{--photo-angle:3deg;top:4%;left:7%;width:91%;height:57%;transform:rotate(var(--photo-angle));z-index:1}
+.photo-dental img{object-position:42% 40%}
+.photo-dental figcaption{top:-24px;right:8px}
+.photo-rjc{--photo-angle:.5deg;top:58%;left:28%;width:68%;height:37%;z-index:0;transform:rotate(var(--photo-angle))}
+.photo-rjc img{object-position:54% 42%}
+.photo-rjc figcaption{bottom:-24px;right:6px}
+.photo-ihm{--photo-angle:-6deg;top:44%;left:0;width:47%;height:33%;z-index:2;transform:rotate(var(--photo-angle))}
+.photo-ihm img{object-position:77% 50%;border:3px solid #fcfcfa}
+.photo-ihm figcaption{bottom:-22px;left:12px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.photo-collage .collage-photo:hover{transform:translateY(-7px) rotate(calc(var(--photo-angle) * .4)) scale(1.025);z-index:3}.photo-collage .collage-photo:hover img{box-shadow:0 18px 40px #123e4326}}
+.profile-continuation{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.profile-continuation .profile-text{font-size:13px;line-height:1.9;max-width:490px}
+.profile-continuation .expertise-map{max-width:430px;width:100%;justify-self:center}
+@media(max-width:1000px){.photo-hero{gap:40px}.photo-introduction h1{font-size:38px}.photo-role{font-size:20px}.photo-description{font-size:15px}.profile-continuation{gap:40px}}
+@media(max-width:760px){.photo-hero{grid-template-columns:1fr;gap:45px}.photo-introduction{padding-bottom:0;max-width:520px}.photo-introduction h1{font-size:38px}.photo-role{font-size:21px;margin-bottom:18px}.photo-description{font-size:16px;max-width:460px}.photo-collage{max-width:480px;justify-self:center;width:94%;margin-bottom:15px}.profile-continuation{grid-template-columns:1fr;gap:28px}.profile-continuation .expertise-map{max-width:470px}}
+@media(max-width:400px){.photo-introduction h1{font-size:35px}.photo-role{font-size:19px}.photo-description{font-size:15px}.collage-photo figcaption{font-size:10px}.photo-collage{width:96%}}
+@media(prefers-reduced-motion:reduce){.site-intro,.collage-photo,.collage-photo img,.hero-linkedin{transition:none}.intro-spinner,.intro-welcome{animation:none}.hero-linkedin:hover:not(:disabled){transform:none}}
